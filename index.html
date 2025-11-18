@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tanishq Lakhotia – Resume</title>
+<style>
+  :root{
+    --text:#1a1a1a;
+    --muted:#5b5b5b;
+    --accent:#0f62fe;
+    --rule:#e6e6e6;
+  }
+  *{box-sizing:border-box}
+  html,body{height:100%}
+  body{
+    margin:0;
+    font:15px/1.6 "Inter", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    color:var(--text);
+    background:#fff;
+  }
+
+  /* Page */
+  .page{
+    max-width:900px;
+    margin:36px auto;
+    padding:40px 48px;
+    border:1px solid var(--rule);
+    border-radius:16px;
+  }
+  @media print{
+    body{background:#fff}
+    .page{
+      max-width:none;
+      margin:0;
+      border:none;
+      border-radius:0;
+      padding:24mm 18mm;
+    }
+    a{color:currentColor; text-decoration:none}
+  }
+
+  /* Header */
+  header{
+    display:flex;
+    flex-wrap:wrap;
+    align-items:flex-end;
+    gap:6px 16px;
+    border-bottom:2px solid var(--rule);
+    padding-bottom:14px;
+    margin-bottom:22px;
+  }
+  .name{
+    font-size:28px;
+    font-weight:800;
+    letter-spacing:.4px;
+  }
+  .contact{
+    margin-left:auto;
+    text-align:right;
+    font-size:14px;
+    color:var(--muted);
+  }
+  .contact a{color:var(--accent); text-decoration:none}
+  .contact a:hover{text-decoration:underline}
+
+  /* Sections */
+  h2{
+    font-size:14px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    margin:22px 0 8px;
+  }
+  .section{
+    border-top:1px solid var(--rule);
+    padding-top:14px;
+  }
+
+  /* Lists */
+  ul{margin:8px 0 0 18px; padding:0}
+  li{margin:6px 0}
+  .tight li{margin:3px 0}
+
+  /* Two-columns utility (for Education rows etc.) */
+  .row{
+    display:flex;
+    flex-wrap:wrap;
+    gap:8px 16px;
+    align-items:flex-start;
+  }
+  .grow{flex:1 1 360px}
+  .right{margin-left:auto; white-space:nowrap; color:var(--muted)}
+
+  .pill{
+    display:inline-block; padding:2px 8px; border:1px solid var(--rule);
+    border-radius:999px; font-size:13px; margin:4px 6px 0 0; color:#333
+  }
+
+  .subtle{color:var(--muted)}
+</style>
+</head>
+<body>
+  <main class="page" role="document" aria-label="Resume">
+    <header>
+      <div class="name">Tanishq Lakhotia</div>
+      <div class="contact">
+        <div>+91 9643593946</div>
+        <div><a href="mailto:tanishqlakhotia@gmail.com">tanishqlakhotia@gmail.com</a></div>
+      </div>
+    </header>
+
+    <section class="section" aria-labelledby="profile">
+      <h2 id="profile">Profile</h2>
+      <p>
+        3rd-year B.Tech CSE student at Bennett University with a CGPA of 6.47.
+        Passionate about networking, AI, and software development. Skilled in
+        implementing practical projects involving security systems and network design.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="education">
+      <h2 id="education">Education</h2>
+      <div class="row">
+        <div class="grow"><strong>Bennett University</strong> – Greater Noida, India</div>
+      </div>
+      <div class="row subtle">
+        <div class="grow">B.Tech in Computer Science &amp; Engineering (2023–2026)</div>
+        <div class="right">CGPA: 6.47/10</div>
+      </div>
+      <div class="row subtle" style="margin-top:6px">
+        <div class="grow"></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="skills">
+      <h2 id="skills">Skills</h2>
+      <ul>
+        <li><strong>Programming:</strong> Python, C++, Java</li>
+        <li><strong>Web:</strong> HTML, CSS, JavaScript</li>
+        <li><strong>Tools:</strong> Git/GitHub, MySQL</li>
+        <li><strong>Core Areas:</strong> Data Structures &amp; Algorithms, Networking, Computer Vision</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="projects">
+      <h2 id="projects">Projects</h2>
+      <ul>
+        <li>
+          <strong>Gun Detection System</strong> — Developed a computer vision model to detect firearms using Python and OpenCV.
+        </li>
+        <li>
+          <strong>Hotel Network Design</strong> — Designed and configured a secure LAN/WAN network for a multi-floor hotel setup.
+        </li>
+        <li>
+          <strong>Secure Multi-Branch Financial Institution Network</strong> — Created a compliant multi-branch network using subnetting and routing protocols.
+        </li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="achievements">
+      <h2 id="achievements">Achievements</h2>
+      <ul class="tight">
+        <li><strong></strong></li>
+      </ul>
+    </section>
+  </main>
+</body>
+</html>
